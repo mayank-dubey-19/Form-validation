@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f7f9;
+    color: #222;
+    padding: 30px 15px;
+}
+
+
+/* Main Container */
+
+.container {
+    max-width: 850px;
+    margin: auto;
+}
+
+
+/* Form Box */
+
+.form-box {
+    background: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 14px;
+    padding: 22px;
+}
+
+
+/* Header */
+
+.form-header {
+    margin-bottom: 18px;
+}
+
+.form-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.form-header p {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+
+/* Sections */
+
+.section {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.personal-section {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.section h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+
+/* Grid */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* Form Group */
+
+.form-group {
+    min-width: 0;
+}
+
+
+/* Labels */
+
+.form-group > label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+
+/* Inputs */
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #d9dde3;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #222;
+    padding: 9px 10px;
+    font-size: 13px;
+    outline: none;
+}
+
+
+/* Input Focus */
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="file"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.10);
+}
+
+
+/* Textarea */
+
+textarea {
+    min-height: 70px;
+    resize: vertical;
+}
+
+
+/* Radio / Checkbox Area */
+
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 13px;
+}
+
+
+/* Radio / Checkbox Label */
+
+.choices label {
+    font-weight: 400;
+    margin: 0;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+
+/* Radio / Checkbox */
+
+.choices input {
+    width: auto;
+    accent-color: #4f46e5;
+}
+
+
+/* Experience */
+
+.experience {
+    gap: 14px;
+}
+
+
+/* Checkbox List */
+
+.checkbox-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+}
+
+
+/* Hint */
+
+.hint {
+    font-size: 11px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+
+/* Error */
+
+.name-error,
+.mobile-error,
+.email-error,
+.aadhaar-error,
+.pan-error,
+.gender-error,
+.experience-error,
+.skills-error,
+.hobbies-error,
+.photo-error,
+.date-error,
+.resume-error,
+.declaration-error {
+    font-size: 11px;
+    color: #b42318;
+    margin-top: 4px;
+    min-height: 14px;
+}
+
+
+
+/* Declaration */
+
+.declaration {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.declaration input {
+    width: auto;
+    margin-top: 3px;
+    accent-color: #4f46e5;
+}
+
+
+/* Buttons */
+
+.actions {
+    display: flex;
+    gap: 9px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+button {
+    border: 1px solid #d9dde3;
+    border-radius: 8px;
+    padding: 9px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #ffffff;
+    color: #222;
+}
+
+
+/* Submit Button */
+
+.submit-btn {
+    background: #4f46e5;
+    color: #ffffff;
+    border-color: #4f46e5;
+}
+
+
+/* Submit Hover */
+
+.submit-btn:hover {
+    background: #4338ca;
+}
+
+
+/* Reset Hover */
+
+.reset-btn:hover {
+    background: #f3f4f6;
+}
+
+
+/* Success Message */
+
+.success-message {
+    display: none;
+    margin-top: 14px;
+    padding: 11px;
+    border-radius: 8px;
+    background: #eef2ff;
+    color: #3730a3;
+    font-size: 13px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .form-box {
+        padding: 18px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .checkbox-list {
+        grid-template-columns: 1fr;
+    }
+
+}
