@@ -210,7 +210,11 @@ textarea {
 .photo-error,
 .date-error,
 .resume-error,
-.declaration-error {
+.declaration-error,
+.address-error,
+.city-error,
+.state-error,
+.error {
     font-size: 11px;
     color: #b42318;
     margin-top: 4px;
